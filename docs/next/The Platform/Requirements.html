@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">Requirements | DSD</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://pi-dsd.github.io/microsite/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://pi-dsd.github.io/microsite/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Requirements | DSD"><meta data-rh="true" name="description" content="Actors:"><meta data-rh="true" property="og:description" content="Actors:"><link data-rh="true" rel="icon" href="/microsite/img/icons/logo_min.svg"><link data-rh="true" rel="canonical" href="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements"><link data-rh="true" rel="alternate" href="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements" hreflang="en"><link data-rh="true" rel="alternate" href="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements" hreflang="x-default"><link rel="stylesheet" href="/microsite/assets/css/styles.6a3ce0f2.css">
-<script src="/microsite/assets/js/runtime~main.f7e9aa79.js" defer="defer"></script>
+<script src="/microsite/assets/js/runtime~main.0c866496.js" defer="defer"></script>
 <script src="/microsite/assets/js/main.6524251a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -15,6 +15,7 @@
 <p>Makes use of the system as a potential user of the services provided by that system;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="admin">Admin:<a href="#admin" class="hash-link" aria-label="Direct link to Admin:" title="Direct link to Admin:">​</a></h3>
 <p>Responsible for ensuring that the system is properly working, and intermediate contact between the other actors.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="user-stories">User stories<a href="#user-stories" class="hash-link" aria-label="Direct link to User stories" title="Direct link to User stories">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="student-1">Student:<a href="#student-1" class="hash-link" aria-label="Direct link to Student:" title="Direct link to Student:">​</a></h3>
 <ol>
 <li>
@@ -28,9 +29,9 @@
 <!-- -->so that i can select an internship;</p>
 </li>
 <li>
-<p>As a student<br>
-<!-- -->I want to confirm my choice (&quot;marriage&quot;) about one of the dissertations the supervisor confirmed<br>
-<!-- -->so that i can start to work on that dissertation;</p>
+<p>As a student
+I want to check the status of the dissertations im interested in
+so that i can check if the teacher has accepted me as the student for it;</p>
 </li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="teacher-1">Teacher:<a href="#teacher-1" class="hash-link" aria-label="Direct link to Teacher:" title="Direct link to Teacher:">​</a></h3>
@@ -43,7 +44,7 @@
 <li>
 <p>As a teacher
 I want to confirm the &quot;marriage&quot; between me and the student that confirmed interest on my proposal
-so that the next steps can be taken</p>
+so that the next steps can be taken;</p>
 </li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="admin-1">Admin:<a href="#admin-1" class="hash-link" aria-label="Direct link to Admin:" title="Direct link to Admin:">​</a></h3>
@@ -58,39 +59,49 @@ so that the next steps can be taken</p>
 <!-- -->I want to be able to add institute/companies logo&#x27;s to the System DB<br>
 <!-- -->so that those images can be used by proponents when adding a new dissertation;</p>
 </li>
+<li>
+<p>As an admin
+I want to be able to introduce/change features in the system
+so that the system can be improved and updated;</p>
+</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases-to-be-completed">Use Cases (To be completed)<a href="#use-cases-to-be-completed" class="hash-link" aria-label="Direct link to Use Cases (To be completed)" title="Direct link to Use Cases (To be completed)">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="student-2">Student:<a href="#student-2" class="hash-link" aria-label="Direct link to Student:" title="Direct link to Student:">​</a></h3>
 <ol>
 <li>
-<p>Show interest -</p>
+<p>Show interest - Select a dissertation and register as interested in the system;</p>
 </li>
 <li>
-<p>See dissertations -</p>
+<p>See dissertations - View all dissertation proposals in the form of a list;</p>
 </li>
 <li>
-<p>Accept dissertation -</p>
+<p>Confirm dissertation interest - After acceptance of the teacher, confirm the interest in the dissertation;</p>
 </li>
 </ol>
 <p align="center"></p><p><img decoding="async" loading="lazy" alt="Student Use Case diagram" src="/microsite/assets/images/Use_cases_PI-d49823ad2d985ef67d7f501c02477cc5.png" width="1072" height="873" class="img_ev3q"></p><p></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="teacher-2">Teacher:<a href="#teacher-2" class="hash-link" aria-label="Direct link to Teacher:" title="Direct link to Teacher:">​</a></h3>
 <ol>
 <li>
-<p>Add dissertation proposal -</p>
+<p>Add dissertation proposal - Add a dissertation proposal, composed of a file and metadata ( title, description, etc... );</p>
 </li>
 <li>
-<p>Show interested students -</p>
+<p>Show interested students in a dissertation - Be able to see the students that showed interest in a dissertation I proposed to choose a student to work with;</p>
 </li>
 <li>
-<p>Accept student -</p>
+<p>Accept student for a dissertation - Finalize the proccess by confirming a student to work in a dissertation;</p>
 </li>
 </ol>
 <p align="center"></p><p><img decoding="async" loading="lazy" alt="Teacher Use Case diagram" src="/microsite/assets/images/Use_cases_PI_-_Page_1-9ad6ddea07ea8d89b9cf7b9e40c45eea.png" width="857" height="710" class="img_ev3q"></p><p></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="admin-2">Admin:<a href="#admin-2" class="hash-link" aria-label="Direct link to Admin:" title="Direct link to Admin:">​</a></h3>
 <ol>
-<li>Accept dissertation -</li>
+<li>
+<p>Accept dissertation proposal - Check all the dissertations that have not been accepted yet by system administrators and accept or deny them;</p>
+</li>
+<li>
+<p>End the dissertation season - Be able to end the dissertation season, so that no more dissertations can be added for this academic year;</p>
+</li>
 </ol>
-<p align="center"></p><p><img decoding="async" loading="lazy" alt="Admin Use Case diagram" src="/microsite/assets/images/Use_cases_PI_-_Page_2-6d2e6052bd63c69e6a08a2004974da33.png" width="694" height="584" class="img_ev3q"></p><p></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/microsite/docs/next/The Platform/Prototype"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Prototype</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/microsite/docs/next/The Platform/architecture"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Architecture</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#actors" class="table-of-contents__link toc-highlight">Actors:</a><ul><li><a href="#student" class="table-of-contents__link toc-highlight">Student:</a></li><li><a href="#teacher" class="table-of-contents__link toc-highlight">Teacher:</a></li><li><a href="#admin" class="table-of-contents__link toc-highlight">Admin:</a></li><li><a href="#student-1" class="table-of-contents__link toc-highlight">Student:</a></li><li><a href="#teacher-1" class="table-of-contents__link toc-highlight">Teacher:</a></li><li><a href="#admin-1" class="table-of-contents__link toc-highlight">Admin:</a></li></ul></li><li><a href="#use-cases-to-be-completed" class="table-of-contents__link toc-highlight">Use Cases (To be completed)</a><ul><li><a href="#student-2" class="table-of-contents__link toc-highlight">Student:</a></li><li><a href="#teacher-2" class="table-of-contents__link toc-highlight">Teacher:</a></li><li><a href="#admin-2" class="table-of-contents__link toc-highlight">Admin:</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a href="https://github.com/pi-dsd/microsite" rel="noopener noreferrer" class="footerLogoLink_BH7S"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width="24" height="24"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width="24" height="24"></a></div><div class="footer__copyright">Projeto em Informática <br>
+<p align="center"></p><p><img decoding="async" loading="lazy" alt="Admin Use Case diagram" src="/microsite/assets/images/Use_cases_PI_-_Page_2-6d2e6052bd63c69e6a08a2004974da33.png" width="694" height="584" class="img_ev3q"></p><p></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/microsite/docs/next/The Platform/Prototype"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Prototype</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/microsite/docs/next/The Platform/architecture"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Architecture</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#actors" class="table-of-contents__link toc-highlight">Actors:</a><ul><li><a href="#student" class="table-of-contents__link toc-highlight">Student:</a></li><li><a href="#teacher" class="table-of-contents__link toc-highlight">Teacher:</a></li><li><a href="#admin" class="table-of-contents__link toc-highlight">Admin:</a></li></ul></li><li><a href="#user-stories" class="table-of-contents__link toc-highlight">User stories</a><ul><li><a href="#student-1" class="table-of-contents__link toc-highlight">Student:</a></li><li><a href="#teacher-1" class="table-of-contents__link toc-highlight">Teacher:</a></li><li><a href="#admin-1" class="table-of-contents__link toc-highlight">Admin:</a></li></ul></li><li><a href="#use-cases-to-be-completed" class="table-of-contents__link toc-highlight">Use Cases (To be completed)</a><ul><li><a href="#student-2" class="table-of-contents__link toc-highlight">Student:</a></li><li><a href="#teacher-2" class="table-of-contents__link toc-highlight">Teacher:</a></li><li><a href="#admin-2" class="table-of-contents__link toc-highlight">Admin:</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a href="https://github.com/pi-dsd/microsite" rel="noopener noreferrer" class="footerLogoLink_BH7S"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width="24" height="24"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width="24" height="24"></a></div><div class="footer__copyright">Projeto em Informática <br>
         Serviço Docente
         <br> Copyright © 2024</div></div></div></footer></div>
 </body>
