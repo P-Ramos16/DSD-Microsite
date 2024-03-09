@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">Requirements | DSD</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://pi-dsd.github.io/microsite/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://pi-dsd.github.io/microsite/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Requirements | DSD"><meta data-rh="true" name="description" content="Functional"><meta data-rh="true" property="og:description" content="Functional"><link data-rh="true" rel="icon" href="/microsite/img/icons/logo_min.svg"><link data-rh="true" rel="canonical" href="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements"><link data-rh="true" rel="alternate" href="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements" hreflang="en"><link data-rh="true" rel="alternate" href="https://pi-dsd.github.io/microsite/docs/next/The Platform/Requirements" hreflang="x-default"><link rel="stylesheet" href="/microsite/assets/css/styles.6a3ce0f2.css">
-<script src="/microsite/assets/js/runtime~main.ff0f84ff.js" defer="defer"></script>
+<script src="/microsite/assets/js/runtime~main.9588741b.js" defer="defer"></script>
 <script src="/microsite/assets/js/main.09a532d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -103,7 +103,56 @@ I want to confirm the &quot;marriage&quot; between me and the student that confi
 </li>
 </ol>
 <p align="center"></p><p><img decoding="async" loading="lazy" alt="Admin Use Case diagram" src="/microsite/assets/images/Use_cases_PI_-_Page_2-63374e0919f22cb19cfd7909fd2e298f.png" width="1041" height="876" class="img_ev3q"></p><p></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="non-functional">Non-functional<a href="#non-functional" class="hash-link" aria-label="Direct link to Non-functional" title="Direct link to Non-functional">​</a></h2></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/microsite/docs/next/The Platform/Deployment"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Deployment</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/microsite/docs/next/The Platform/Prototype"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Prototype</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#functional" class="table-of-contents__link toc-highlight">Functional</a><ul><li><a href="#actors" class="table-of-contents__link toc-highlight">Actors:</a></li><li><a href="#user-stories" class="table-of-contents__link toc-highlight">User stories</a></li><li><a href="#use-cases" class="table-of-contents__link toc-highlight">Use Cases</a></li></ul></li><li><a href="#non-functional" class="table-of-contents__link toc-highlight">Non-functional</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a href="https://github.com/pi-dsd/microsite" rel="noopener noreferrer" class="footerLogoLink_BH7S"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width="24" height="24"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width="24" height="24"></a></div><div class="footer__copyright">Projeto em Informática <br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="non-functional">Non-functional<a href="#non-functional" class="hash-link" aria-label="Direct link to Non-functional" title="Direct link to Non-functional">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance">Performance<a href="#performance" class="hash-link" aria-label="Direct link to Performance" title="Direct link to Performance">​</a></h3>
+<ul>
+<li>The system should maintain consistent response times as the user base or data volume increases;</li>
+<li>The system should be able to handle an increasing number of transactions or requests per unit of time.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scalability">Scalability<a href="#scalability" class="hash-link" aria-label="Direct link to Scalability" title="Direct link to Scalability">​</a></h3>
+<ul>
+<li>The system should accomodate a growing volume of data without significant degradation in performance;</li>
+<li>The system should support horizontal scaling by distributing workloads accross multiple servers or nodes;</li>
+<li>The system should support vertical scaling by allowing the addition of more resources to a single server;</li>
+<li>Ensure that vertical scaling provides a proportional increase in performance.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="availability-and-fault-tolerance">Availability and Fault Tolerance<a href="#availability-and-fault-tolerance" class="hash-link" aria-label="Direct link to Availability and Fault Tolerance" title="Direct link to Availability and Fault Tolerance">​</a></h3>
+<ul>
+<li>In the event of a server failure, the system should automatically redirect traffic to an available server in a short period of time, to minimize service disruption;</li>
+<li>The system shall achieve a minimum uptime of 99.99% over any consecutive 30-day period, excluding scheduled maintenance windows;</li>
+<li>The system should remain available and responsive in the event of component failures or increased load;</li>
+<li>There should be sufficient capacity to accommodate the failover of services without impacting performance.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="load-balancing">Load Balancing<a href="#load-balancing" class="hash-link" aria-label="Direct link to Load Balancing" title="Direct link to Load Balancing">​</a></h3>
+<ul>
+<li>The system should distribute incoming requests evenly across multiple servers to ensure balanced resource utilization;</li>
+<li>Load balancers should scale seamlessly to handle increased network traffic.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-partitioning-and-integrity">Data Partitioning and Integrity<a href="#data-partitioning-and-integrity" class="hash-link" aria-label="Direct link to Data Partitioning and Integrity" title="Direct link to Data Partitioning and Integrity">​</a></h3>
+<ul>
+<li>The system should be able to shard data effectively to distribute it accross multiple nodes.</li>
+<li>The system shall implement thorough input validation mechanisms to ensure that only valid and properly formatted data is accepted;</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security">Security<a href="#security" class="hash-link" aria-label="Direct link to Security" title="Direct link to Security">​</a></h3>
+<ul>
+<li>Access permissions should be based on roles to ensure proper authorization (RBAC - Role-Based Access Control);</li>
+<li>All sensitive data transmitted over the network should be encrypted using secure protocols (e.g., TLS/SSL);</li>
+<li>Implement secure CORS policies to prevent unauthorized access from web applications.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="logging-and-monitoring">Logging and Monitoring<a href="#logging-and-monitoring" class="hash-link" aria-label="Direct link to Logging and Monitoring" title="Direct link to Logging and Monitoring">​</a></h3>
+<ul>
+<li>Implement logging for all significant system events, errors and warnings;</li>
+<li>Log entries should incluse timestamps to facilitate the analysis of events over time;</li>
+<li>Logs should be stored centrally to facilitate easy monitoring and analysis;</li>
+<li>Define and enforce access controls for log files to ensure that only authorized personnel can view and modify logs.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="usability-and-user-interface">Usability and User Interface<a href="#usability-and-user-interface" class="hash-link" aria-label="Direct link to Usability and User Interface" title="Direct link to Usability and User Interface">​</a></h3>
+<ul>
+<li>Include in the user interface common elements, such as navigation menus and buttons, should maintain consistent placement and behavior throughout the application, reducing cognitive load for users;</li>
+<li>Minimize the loading of UI elements, aiming for swift responses to user interactions to enhance perceived performance and usability;</li>
+<li>Provide clear and concise error messages that help users understand issues and guide them toward corrective actions;</li>
+<li>Incorporate inline help and tooltips strategically to provide additional information or guidance without cluttering the interface.</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/microsite/docs/next/The Platform/Deployment"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Deployment</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/microsite/docs/next/The Platform/Prototype"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Prototype</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#functional" class="table-of-contents__link toc-highlight">Functional</a><ul><li><a href="#actors" class="table-of-contents__link toc-highlight">Actors:</a></li><li><a href="#user-stories" class="table-of-contents__link toc-highlight">User stories</a></li><li><a href="#use-cases" class="table-of-contents__link toc-highlight">Use Cases</a></li></ul></li><li><a href="#non-functional" class="table-of-contents__link toc-highlight">Non-functional</a><ul><li><a href="#performance" class="table-of-contents__link toc-highlight">Performance</a></li><li><a href="#scalability" class="table-of-contents__link toc-highlight">Scalability</a></li><li><a href="#availability-and-fault-tolerance" class="table-of-contents__link toc-highlight">Availability and Fault Tolerance</a></li><li><a href="#load-balancing" class="table-of-contents__link toc-highlight">Load Balancing</a></li><li><a href="#data-partitioning-and-integrity" class="table-of-contents__link toc-highlight">Data Partitioning and Integrity</a></li><li><a href="#security" class="table-of-contents__link toc-highlight">Security</a></li><li><a href="#logging-and-monitoring" class="table-of-contents__link toc-highlight">Logging and Monitoring</a></li><li><a href="#usability-and-user-interface" class="table-of-contents__link toc-highlight">Usability and User Interface</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a href="https://github.com/pi-dsd/microsite" rel="noopener noreferrer" class="footerLogoLink_BH7S"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width="24" height="24"><img src="/microsite/img/icons/github-mark-white.svg" alt="Our repo Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width="24" height="24"></a></div><div class="footer__copyright">Projeto em Informática <br>
         Serviço Docente
         <br> Copyright © 2024</div></div></div></footer></div>
 </body>
